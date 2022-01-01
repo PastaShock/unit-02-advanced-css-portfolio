@@ -1,0 +1,132 @@
+:root {
+    --main-bg-color: turquoise;
+    --main-ss-font: 'merriweather sans';
+}
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0 auto;
+    font-family: var(--main-ss-font);
+}
+
+header {
+    /* display: inline-block; */
+    position: fixed;
+    top: 0;
+    height: 75px;
+    width: 100%;
+    background-color: var(--main-bg-color);
+
+}
+h1 {
+    display: inline-block;
+    font-family: var(--main-ss-font);
+    font-weight: 700;
+    margin: auto;
+}
+
+span {
+    font-weight:900;
+}
+
+ul {
+    display: inline-block;
+    color: teal;
+    float: right;
+    margin: 20 20 20 0;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    font-family: monospace;
+    text-decoration: none;
+    padding: 5px;
+}
+
+content {
+    margin-top: 75px;
+    padding-top: 75px;
+}
+
+.about {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.left {
+    display: inline-block;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.vertical {
+    width: 3px;
+    height: 100%;
+    background-color: var(--main-bg-color);
+}
+
+p {
+    font-family: monospace;
+}
+
+img {
+    max-width: 600px;
+}
+
+.left {
+    margin: 
+}
+
+.grid {
+    max-width: 1200px;
+    /* margin-top: 75px; */
+    display: flex;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+
+.project {
+    position: relative;
+    background-color: var(--main-bg-color);
+    padding: 5px;
+    margin: 10px;
+    /* width:  400px; */
+    overflow: hidden;
+}
+
+.project .hero {
+    max-width: 1200px;
+}
+
+.project img {
+    max-width:fit-content;
+    height: auto;
+}
+
+.project .hero img {
+    max-width: 1200px;
+}
+
+h3 {
+    display: inline-block;
+    background-color: var(--main-bg-color);
+    padding: 5px;
+    position: absolute;
+    bottom: 15px;
+}
+
+.project p {
+    display:inline-block;
+    background-color: var(--main-bg-color);
+    padding: 5px;
+    position: absolute;
+    overflow:hidden;
+    white-space: nowrap;
+    bottom: 0px;
+}
+
