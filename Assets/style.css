@@ -66,24 +66,38 @@ section {
 }
 
 .left {
+    display: flex;
+    justify-content: flex-end;
     float: left;
     width: 20%;
     height: 100%;
 }
 
+/* .left::after {
+    content: '';
+    width: 0;
+    height: 100%;
+    position: absolute;
+    border-right: 5px solid var(--main-bg-color);
+    left: 22%;
+    top: 20px;
+    bottom: 20px;
+} */
+
 h2 {
     font-weight: 600;
     text-align: right;
     margin-right: 20px;
+    align-self:flex-start;
 }
 
-/* .vertical {
-    /* display: inline-block; */
-    /* float: right; */
-    /* border-right: 6px solid var(--main-bg-color); */
-    /* height: 100%; */
+.vertical {
+    border-right: 6px solid var(--main-bg-color);
+    height: 100%;
+    width: 10px;
     /* background-color: var(--main-bg-color); */
-/* } */
+
+}
 
 p {
     font-family: monospace;
@@ -92,7 +106,7 @@ p {
 
 .left {
     margin: 0 50px;
-    border-right: 5px solid var(--main-bg-color);
+    /* border-right: 5px solid var(--main-bg-color); */
     height: 75px;
     /* overflow:hidden;  */
 }
@@ -139,19 +153,28 @@ img {
 
 h3 {
     display: inline-block;
-    background-color: var(--main-bg-color);
     padding: 5px;
     position: absolute;
-    bottom: 15px;
+    bottom: 22px;
 }
 
 .project p {
     display:inline-block;
-    background-color: var(--main-bg-color);
     padding: 5px;
     position: absolute;
     overflow:hidden;
     white-space: nowrap;
-    bottom: 0px;
+    bottom: 7px;
 }
 
+.description {
+    display:block;
+    background: var(--main-bg-color);
+    padding: 5px 5px 10px 5px;
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    height: 50px;
+    width: 150px;
+}
