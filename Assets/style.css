@@ -16,8 +16,10 @@ header {
     height: 75px;
     width: 100%;
     background-color: var(--main-bg-color);
+    z-index: 1;
 
 }
+
 h1 {
     display: inline-block;
     font-family: var(--main-ss-font);
@@ -46,70 +48,93 @@ a {
     padding: 5px;
 }
 
-content {
-    margin-top: 75px;
-    padding-top: 75px;
+section:first-child {
+    margin-top: 100px;
+}
+
+section {
+    min-height: 75px;
+    margin: 25px 20% 0 0;
+    padding-left: 0;
 }
 
 .about {
-    margin: 0 auto;
-    display: inline-block;
+    /* margin: auto; */
+    width: 100%;
+    /* display: inline-block; */
+    text-align: center;
 }
 
 .left {
-    display: inline-block;
+    float: left;
+    width: 20%;
+    height: 100%;
 }
 
 h2 {
     font-weight: 600;
+    text-align: right;
+    margin-right: 20px;
 }
 
-.vertical {
-    width: 3px;
-    height: 100%;
-    background-color: var(--main-bg-color);
-}
+/* .vertical {
+    /* display: inline-block; */
+    /* float: right; */
+    /* border-right: 6px solid var(--main-bg-color); */
+    /* height: 100%; */
+    /* background-color: var(--main-bg-color); */
+/* } */
 
 p {
     font-family: monospace;
-}
-
-img {
-    max-width: 600px;
+    padding: 0 25px;
 }
 
 .left {
-    margin: 
+    margin: 0 50px;
+    border-right: 5px solid var(--main-bg-color);
+    height: 75px;
+    /* overflow:hidden;  */
 }
 
 .grid {
     max-width: 1200px;
-    /* margin-top: 75px; */
+    margin: 0;
     display: flex;
-    max-width: 600px;
+    /* max-width: 600px; */
     flex-wrap: wrap;
+    gap: 20px 20px;
 }
 
 .project {
+    /* box-sizing: border-box; */
     position: relative;
     background-color: var(--main-bg-color);
     padding: 5px;
-    margin: 10px;
-    /* width:  400px; */
+    max-height:  400px;
     overflow: hidden;
+    width: 44%;
 }
 
-.project .hero {
-    max-width: 1200px;
+.hero {
+    width: 100%;
+    height: 400px;
+}
+
+img {
+    object-fit: contain;
+    max-width: 100%;
+    z-index: 0;
 }
 
 .project img {
-    max-width:fit-content;
     height: auto;
+    opacity: 60%;
+    transition: opacity .25s ease-in-out;
 }
 
-.project .hero img {
-    max-width: 1200px;
+.project img:hover {
+    opacity: 100%;
 }
 
 h3 {
