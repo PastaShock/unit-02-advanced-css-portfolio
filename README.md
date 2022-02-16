@@ -1,4 +1,6 @@
 ## Homework 2
+The link to this project's github is [github](https://github.com/PastaShock/unit-02-advanced-css-portfolio)
+The link to the deployed page is [here](https://pastashock.github.io/unit-02-advanced-css-portfolio/)
 ### Advanced CSS
 
 The goal of this homework was to create a page similar in functionality to the reference animation given.
@@ -14,4 +16,4 @@ I got links to a couple of social media and social-adjacent platforms that I use
 ### Update february 2022
 I have gone and updated the page with our project 1 as the hero/jumbotron.
 I went and added some of the homework projects in the placeholder slots.
-I made minor tweaks to the css to better fit and space the content.
+I made minor tweaks to the css to better fit and space the contentk.
