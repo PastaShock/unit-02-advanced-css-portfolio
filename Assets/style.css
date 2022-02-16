@@ -182,14 +182,14 @@ h3 {
     left: 0;
     bottom: 30%;
     height: 50px;
-    width: 175px;
+    width: 200px;
 }
 
 .item {
     margin: auto;
     text-align: center;
     height: 100px;
-    padding: 0px;
+    padding: 35px;
 }
 
 .item img {
